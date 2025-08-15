@@ -10,7 +10,7 @@
     <p>
         <?php
         // ここにコードを書いていく
-        function sort_2way($order,$array){
+        function sort_2way($array,$order){
           if($order){
             echo '昇順にソートします。<br>';
             sort($array);
@@ -28,8 +28,8 @@
 
         // ソートする配列を宣言
         $nums = [15, 4, 18, 23, 10 ];
-        sort_2way(true,$nums);
-        sort_2way(false,$nums);
+        sort_2way($nums,true);
+        sort_2way($nums,false);
         ?>
     </p>
 </body>
